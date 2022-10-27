@@ -26,10 +26,10 @@ There are a number of tools available to developers working on the OpenShift pla
 
 - [OpenShift Platforrm Security](#openshift-platform-security)
 - [Privacy](#privacy)
-- [Critical Systems Standard]
-- [Platform Tools Security Assessments]
-- [Platform Product Registry]
-- [Communications]
+- [Critical Systems Standard](#critical-systems-standard)
+- [Platform Tools Security Assessments](#platform-tools-security-assessments)
+- [Platform Product Registry](#platform-product-registry)
+- [Communications](#communications)
 - [Access Management](#access-management)
 - [Kubernetes Network Policies](#kubernetes-network-policies)
 - [Pipeline Templates (includes static and dynamic analysis)](#pipeline-templates)
@@ -80,7 +80,7 @@ We are very close to obtaining critical systems standard compliance.
 Documentation is in final stages of review for submission.
 
 ------
-### <a name="platform-security-assessments"></a>Platform Tools Security Assessments
+### <a name="platform-tools-security-assessments"></a>Platform Tools Security Assessments
 
 Many of the platform tools have ***completed*** security assessments.  These include:
 - OpenShift v4.x and GitHub (Public)
@@ -113,7 +113,7 @@ The following security assessments are ***planned***:
 For specifics, please contact the platform security architect, nick.corcoran@gov.bc.ca.
 
 ------
-### <a name="platform-registry"></a>Platform Product Registry
+### <a name="platform-product-registry"></a>Platform Product Registry
 
 Here, we maintain a listing of all products with deployments on each OpenShift cluster. 
 ![platformregistryexample](https://user-images.githubusercontent.com/53879638/144318853-104588bc-0db8-4cd7-8616-13c1c137f199.JPG)
