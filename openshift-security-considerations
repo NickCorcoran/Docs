@@ -26,6 +26,10 @@ There are a number of tools available to developers working on the OpenShift pla
 
 - [OpenShift Platforrm Security](#openshift-platform-security)
 - [Privacy](#privacy)
+- [Critical Systems Standard]
+- [Platform Tools Security Assessments]
+- [Platform Product Registry]
+- [Communications]
 - [Access Management](#access-management)
 - [Kubernetes Network Policies](#kubernetes-network-policies)
 - [Pipeline Templates (includes static and dynamic analysis)](#pipeline-templates)
@@ -81,34 +85,37 @@ Documentation is in final stages of review for submission.
 Many of the platform tools have ***completed*** security assessments.  These include:
 - OpenShift v4.x and GitHub (Public)
 - KeyCloak
-- Aqua
+- KeyCloak Realm Registry
+- KeyCloak Common Host Single Sign-on
 - Artifactory
 - Sysdig Monitor
 - Just Ask!
+- Certbot
+- Mautic
 - Rocket Chat
 - Vault
+- OCP Application Resource Tuning Advisor
+- Uptime.com
+- Stack Overflow
+
+- 1Password (SoAR complete, Cloud security schedule review complete) - not to be used corporately due to no background checks for staff/contractors
 
 The following security assessments are ***underway***:
-- Mautic
-- OCP Application Resource Tuning Advisor (in sign-off)
+- Platform Product Registry
 - GitHub Enterprise (Cloud security schedule review underway)
-- 1Password (SoAR complete, Cloud security schedule review underway)
-- Platform Registry
 
 The following security assessments are ***planned***:
-- Stack Overflow
 - Cert Manager for OpenShift
 - GitGuardian
-- KeyCloak Realm Registry
 - OCP App Assessment Tool
 - Platform Security Dashboard
 
 For specifics, please contact the platform security architect, nick.corcoran@gov.bc.ca.
 
 ------
-### <a name="platform-registry"></a>Platform Project Registry
+### <a name="platform-registry"></a>Platform Product Registry
 
-Here, we maintain a listing of all projects with deployments on each OpenShift cluster. 
+Here, we maintain a listing of all products with deployments on each OpenShift cluster. 
 ![platformregistryexample](https://user-images.githubusercontent.com/53879638/144318853-104588bc-0db8-4cd7-8616-13c1c137f199.JPG)
 
 https://registry.developer.gov.bc.ca/public-landing?redirect=/dashboard
@@ -294,11 +301,11 @@ Retention is set as follows:
 
 We are currently working on Azure AD integration (via KeyCloak) and user role mapping based on OpenShift namespace access.
 
-**Uptime Robot** (currently being replaced with Uptime.com for improved SLAs).
+**Uptime.com**
 
 This tools help us to observe platform service availability:
-- https://developer.gov.bc.ca/Openshift-4-Platform-Services-Reliability-Dashboard-with-Uptime-Robot
-- https://stats.uptimerobot.com/w28pPSLlZE
+- https://cloud.gov.bc.ca/private-cloud/our-services-in-private-cloud-paas/
+- https://status.developer.gov.bc.ca/
 
 ------
 ### <a name="backups"></a>Backups
@@ -342,7 +349,8 @@ Teams may request GitHub apps to be associated with their own or all projects in
 **GitHub Enterprise**
 
 We are currently piloting the use of GitHub Enterprise.  
-- https://developer.gov.bc.ca/Use-of-GitHub-Enterprise-User-Licenses-in-BC-Gov
+- https://developer.gov.bc.ca/Use-of-GitHub-Enterprise-User-Licenses-in-BC-Gov ** needs to be ported to new site. **
+- https://github.com/enterprises/bcgov-ent/sso
 
 ------
 ### <a name="other-considerations"></a><u>Other considerations</u>
