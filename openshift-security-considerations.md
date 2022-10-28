@@ -127,7 +127,7 @@ While access to the registry is currently limited to the OpenShift Platform Serv
 
 Community sharing, alerts and discussions take place on Rocket Chat, which we host as an app on OpenShift.  Authentication via IDIR or GitHub (in BCGov org or invited by an existing member).
 - https://developer.gov.bc.ca/Steps-to-join-Rocket.Chat
-- https://reggie.developer.gov.bc.ca/rocketChat
+- https://just-ask.developer.gov.bc.ca/
 - https://developer.gov.bc.ca/Leveraging-Rocket.Chat
 
 #### Mautic
@@ -336,11 +336,8 @@ Here is a summary of the GitHub organizations we own and their purposes:
 - bcdevops - alternate git repository for platform application code.  Membership required for access to OpenShift.
 - bcgov-platform-services - git repository for platform services team
 
-These resources are available on the developer hub:
-- https://developer.gov.bc.ca/Introduction-To-Github-and-Gov
-- https://developer.gov.bc.ca/Github-Practices-in-Gov
-- https://developer.gov.bc.ca/User-access-into-Github-or-Openshift
-- https://developer.gov.bc.ca/Git-Workflows-For-Your-Team-or-Project
+These resources are available:
+- https://beta-docs.developer.gov.bc.ca/bc-government-organizations-in-github/
 
 **GitHub Apps**
 
@@ -349,7 +346,7 @@ Teams may request GitHub apps to be associated with their own or all projects in
 **GitHub Enterprise**
 
 We are currently piloting the use of GitHub Enterprise.  
-- https://developer.gov.bc.ca/Use-of-GitHub-Enterprise-User-Licenses-in-BC-Gov ** needs to be ported to new site. **
+- https://beta-docs.developer.gov.bc.ca/github-enterprise-user-licenses-bc-government/
 - https://github.com/enterprises/bcgov-ent/sso
 
 ------
@@ -369,15 +366,15 @@ The platform services team provides training to onboarding teams, as well as sup
 - https://github.com/bcdevops/devops-platform-workshops
 
 ***Support:***
-- https://developer.gov.bc.ca/DevOps-Requests
-- https://developer.gov.bc.ca/Getting-human-support-for-issues-not-covered-by-devops-requests
+- https://cloud.gov.bc.ca/private-cloud/support-and-community/how-to-get-support-or-help/
+- https://cloud.gov.bc.ca/private-cloud/support-and-community/devops-requests-in-the-bc-gov-private-cloud-paas/
 - Various Rocket Chat channels
 
 **App security self assessment:**
-- https://developer.gov.bc.ca/Application-Security-Self-Assessment
+- https://beta-docs.developer.gov.bc.ca/security-best-practices-for-apps/
 
 **Best practices for building apps on OpenShift:**
-- https://developer.gov.bc.ca/Best-Practices-for-Building-Apps-on-Openshift
+- https://beta-docs.developer.gov.bc.ca/
 
 **Contact**
 For all other matters concerning security on the OpenShift Container Platform, please contact nick.corcoran@gov.bc.ca.
