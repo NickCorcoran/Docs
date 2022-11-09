@@ -184,12 +184,15 @@ The pipeline templates above make it easier to include the tools described below
   - https://beta-docs.developer.gov.bc.ca/reusable-services-list/#owasp-zap-security-vulnerability-scanning
 
 **What do each of these types of scanning tools do for me?**
+
 Static Anaysis (i.e. SonarX, CodeQL) 
-     - identifies coding issues that could lead to compromise, back doors, secrets, etc
+- identifies coding issues that could lead to compromise, back doors, secrets, etc
+
 Dynamic Anaysis (i.e. OWASP ZAP) 
-     - testing against a live version of app for injection, Cross-site scripting (XSS), and other common web attacks (https://owasp.org/www-project-top-ten/)
+- testing against a live version of app for injection, Cross-site scripting (XSS), and other common web attacks (https://owasp.org/www-project-top-ten/)
+
 Image Analysis 
-     - ensures image components are up-to-date and not vulnerable to known exploits (https://cve.mitre.org/, https://nvd.nist.gov/).
+- ensures image components are up-to-date and not vulnerable to known exploits (https://cve.mitre.org/, https://nvd.nist.gov/).
 
 ------
 ### <a name="container-image-scanning"></a>Container image scanning (ACS, Xray)
