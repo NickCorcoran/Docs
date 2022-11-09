@@ -165,7 +165,7 @@ The Platform Services team maintains an Access Control Policy for all platform t
 
 Network policies help the platform and project teams to better control communications between components.  While KNPs only apply as INGRESS rules (not egress), they help to improve our overall security posture.  KNPs only apply to on-cluster communications (i.e. between pods in a namespace, or between namespaces).  For off-cluster communications, hosting is investigating a VMWare tool called NSX-T.
 
-Find our more about using KNPs to control network security for an application hosted on the Private Cloud Openshift Platform in [this document](https://github.com/bcgov/how-to-workshops/blob/65ac9469db92eac86d8e396d9366515cddc15a4b/labs/netpol-quickstart/README.md). 
+Find our more about using KNPs to control network security for an application hosted on the Private Cloud Openshift Platform in [this document](https://beta-docs.developer.gov.bc.ca/openshift-network-policies/). 
 
 More details on KNPs can be found here: https://kubernetes.io/docs/concepts/services-networking/network-policies/
 
@@ -179,8 +179,8 @@ Here is a representation of what an application build pipeline should look like:
 ![PlatformSec drawio](https://user-images.githubusercontent.com/53879638/144318963-fdb5b877-88b8-451d-accf-2d24918c0d62.png)
 
 The pipeline templates above make it easier to include the tools described below:
-  - https://developer.gov.bc.ca/SonarQube-on-OpenShift
-  - https://developer.gov.bc.ca/OWASP-ZAP-Security-Vulnerability-Scanning
+  - https://beta-docs.developer.gov.bc.ca/reusable-services-list/#sonarqube-in-the-bc-gov-private-cloud-paas
+  - https://beta-docs.developer.gov.bc.ca/reusable-services-list/#owasp-zap-security-vulnerability-scanning
 
 **What do each of these types of scanning tools do for me?**
 Static Anaysis (i.e. SonarX, CodeQL) 
@@ -191,18 +191,22 @@ Image Analysis
      - ensures image components are up-to-date and not vulnerable to known exploits (https://cve.mitre.org/, https://nvd.nist.gov/).
 
 ------
-### <a name="container-image-scanning"></a>Container image scanning (Aqua, Xray)
+### <a name="container-image-scanning"></a>Container image scanning (ACS, Xray)
 
 Image scanning/analysis comes in 2 forms - 1 active (RedHat Advanced Cluster Security - ACS), 1 passive (XRay).
 
 **ACS:**
 
-This tool allows us to scan image registries and running containers for image vulnerabilities.  It also allows us to create policies at build, deploy, and runtime.  It can also help in defining network security policies for your application and visualizing component communications.
+This tool allows us to scan image registries and running containers for image vulnerabilities.  
+It allows us to create policies at build, deploy, and runtime.  
+It can also help in defining network security policies for your application and visualizing component communications.
+
 Scoped access is granted based on identification as a Product Owner or Technical Lead in the OpenShift Product Registry.  
 Developer access can be granted by request.  Requests must include the following:
 - Namespaces
 - Product Owner approval
 
+Links:
 - https://acs.developer.gov.bc.ca
 - https://www.redhat.com/en/technologies/cloud-computing/openshift/advanced-cluster-security-kubernetes
 
@@ -249,13 +253,15 @@ This 'secrets' store should actually only be used for configurations.  Values ar
 **Vault:**
 
 The preferred secrets management tool, Vault was recently launched for team use on OpenShift.
-- https://developer.gov.bc.ca/BC-Government-Vault-Secrets-Management
+- https://cloud.gov.bc.ca/private-cloud/our-products-in-the-private-cloud-paas/vault-secrets-management/
+- https://beta-docs.developer.gov.bc.ca/vault-secrets-management-service/
+- https://beta-docs.developer.gov.bc.ca/vault-getting-started-guide/
 
 ------
 ### <a name="gitops-cluster-configuration-management"></a>GitOps/Cluster Configuration Management
 
 Argo CD provides a GitOps capability for sync'ing a Git repository with an OpenShift configuration (platform or application).
-- https://developer.gov.bc.ca/Argo-CD-Usage-on-the-DevExchange-OpenShift-Platform
+- https://beta-docs.developer.gov.bc.ca/argo-cd-usage/
 
 ------
 ### <a name="api-management"></a>Application Programmable Interface (API) Management
@@ -290,8 +296,8 @@ This tool provides a more wholistic view of logs for an application or at the pl
 **Sysdig Monitor:**
 
 This tool allows our platform admins and platfrom teams to build monitoring dashboards.
-- https://developer.gov.bc.ca/BC-Government-Sysdig-Monitoring-Service-Definition
-- https://developer.gov.bc.ca/OpenShift-User-Guide-to-Creating-and-Using-a-Sysdig-Team-for-Monitoring
+- https://cloud.gov.bc.ca/private-cloud/our-products-in-the-private-cloud-paas/monitoring-with-sysdig/
+- https://beta-docs.developer.gov.bc.ca/sysdig-monitor-onboarding/
 - https://app.sysdigcloud.com/#/login
 
 **Security Information and Event Monitoring (SIEM):**
@@ -312,8 +318,8 @@ This tools help us to observe platform service availability:
 ------
 ### <a name="backups"></a>Backups
 **OpenShift:**
-- https://developer.gov.bc.ca/OCP4-Backup-and-Restore
-- https://developer.gov.bc.ca/Backup-Container
+- https://beta-docs.developer.gov.bc.ca/reusable-services-list/#backup-container
+- https://beta-docs.developer.gov.bc.ca/database-backup-best-practices/
 
 **GitHub:**
 - https://github.com/bcgov-c/platform-services-docs/blob/main/github-backups.md
@@ -363,13 +369,14 @@ Some teams have decided to host PCI-scoped applications on-prem (non-OpenShift) 
 The platform services team provides training to onboarding teams, as well as support for issues experienced.  Ministry staff that work with devops teams are also encouraged to attend training.
 
 ***Training:***
-- https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-101
-- https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-201
+- https://cloud.gov.bc.ca/private-cloud/support-and-community/platform-training-and-resources/openshift-101/
+- [https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-201](https://cloud.gov.bc.ca/private-cloud/support-and-community/platform-training-and-resources/openshift-201/)
 - https://github.com/bcdevops/devops-platform-workshops
 
 ***Support:***
 - https://cloud.gov.bc.ca/private-cloud/support-and-community/how-to-get-support-or-help/
 - https://cloud.gov.bc.ca/private-cloud/support-and-community/devops-requests-in-the-bc-gov-private-cloud-paas/
+- https://cloud.gov.bc.ca/private-cloud/support-and-community/platform-training-and-resources/how-to-videos-and-demos/
 - Various Rocket Chat channels
 
 **App security self assessment:**
@@ -379,4 +386,4 @@ The platform services team provides training to onboarding teams, as well as sup
 - https://beta-docs.developer.gov.bc.ca/
 
 **Contact**
-For all other matters concerning security on the OpenShift Container Platform, please contact nick.corcoran@gov.bc.ca.
+For all other matters concerning security on the OpenShift Container Platform, please contact PlatformServicesTeam@gov.bc.ca.
