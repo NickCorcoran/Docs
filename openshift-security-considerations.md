@@ -49,13 +49,13 @@ There are a number of tools available to developers working on the OpenShift pla
 ## Tools & Capabilities
 ### <a name="openshift-platform-security"></a>OpenShift Platform Security
 
-Service definition - Silver/Gold - https://developer.gov.bc.ca/Getting-Started-on-the-DevOps-Platform/BC-Gov-PaaS-OpenShift-Platform-Service-Definition
+Service definition - Silver/Gold - https://cloud.gov.bc.ca/private-cloud/our-services-in-private-cloud-paas/get-started-with-the-private-cloud-paas/
 
 Our **_Silver Service_** is our standard DevOps platform offering, with on-cluster resiliencey based on application design.
 
 Our **_Gold Service_** is our enhanced DevOps platform offering, with replication to a secondary cluster for disaster fail-over purposes.  
 
-Please take note of the **_Shared Responsibility Model_**.  While the Platform Services Team manages infrastructure, OpenShift Container Platform and the Platform critical services as part of the Private Cloud PaaS, the Product Team bears the responsibility for the functionality and operations of their application(s) hosted on the Platform.  
+Please take note of the [**_Shared Responsibility Model_**](https://cloud.gov.bc.ca/private-cloud/your-product-team-in-the-private-cloud-paas/our-shared-responsibilities/).  While the Platform Services Team manages infrastructure, OpenShift Container Platform and the Platform critical services as part of the Private Cloud PaaS, the Product Team bears the responsibility for the functionality and operations of their application(s) hosted on the Platform.  
 
 Specific details on OpenShift specific secuirty controls can be found here:
 
