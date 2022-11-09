@@ -159,8 +159,8 @@ We are investigating third party tools to help improve the user management exper
 Platform Services Roles and Responsibilities can be found here:
 - https://cloud.gov.bc.ca/private-cloud/your-product-team-in-the-private-cloud-paas/our-shared-responsibilities/
 
-The Platform Services team maintains an Access Control Policy for all platform tools.  
-- https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/c1ma8i4adqrdud0ff650/access-control-policy-openshift-and-platform-tools-public. **Need to update location**
+The Platform Services team maintains an Access Control Policy for all platform tools.  This is kept within the IDIR protected area on the following website:
+- https://cloud.gov.bc.ca/private-cloud/idir-protected-content/
 
 ------
 ### <a name="kubernetes-network-policies"></a>Kubernetes Network Policies (KNPs)
@@ -374,7 +374,8 @@ We are currently piloting the use of GitHub Enterprise.
 ### <a name="other-considerations"></a><u>Other considerations</u>
 **Payment Card Industry Compliance (PCI-DSS)**
 
-Our OpenShift implementation is **NOT** PCI-DSS compliant.  If you wish to host an application on OpenShift that needs to perform financial transactions, please refer to the following:  https://developer.gov.bc.ca/Payment-Card-Processing-for-OpenShift-Applications. **Need to update**
+Our OpenShift implementation is **NOT** PCI-DSS compliant.  If you wish to host an application on OpenShift that needs to perform financial transactions, please refer to the following:  https://github.com/BCDevOps/developer-experience/blob/37b93d7cbeaa997e31ad320c345d54c9bcf18d91/docs/PCIDSSPatternforOCP.md
+
 Some teams have decided to host PCI-scoped applications on-prem (non-OpenShift) or on a cloud based service (AWS, Azure, etc) to avoid linkages with government systems not under their control.
 
 **Training/Support**
