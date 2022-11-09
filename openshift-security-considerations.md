@@ -248,6 +248,7 @@ Generate a .csr for each site:
 -  EA Approves
 -  Order is sent to DXC for fulfillment
 -  Once order is fulfilled/shipped by DXC, Ministry Service Desk sends 'Completed Order' notification to business area
+-  *Note:* This process may be slightly different using MyServiceCentre.
 
 ![TLS_Order](https://user-images.githubusercontent.com/53879638/144319065-af4ae9f9-3d61-41b3-977b-36a600e51b0a.png)
 
