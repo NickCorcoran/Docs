@@ -107,10 +107,9 @@ The following security assessments are ***underway***:
 The following security assessments are ***planned***:
 - Cert Manager for OpenShift
 - GitGuardian
-- OCP App Assessment Tool
 - Platform Security Dashboard
 
-For specifics, please contact the platform security architect, nick.corcoran@gov.bc.ca.
+For specifics, please contact the platform services team at PlatformServicesTeam@gov.bc.ca.
 
 ------
 ### <a name="platform-product-registry"></a>Platform Product Registry
@@ -120,15 +119,14 @@ Here, we maintain a listing of all products with deployments on each OpenShift c
 
 https://registry.developer.gov.bc.ca/public-landing?redirect=/dashboard
 
-While access to the registry is currently limited to the OpenShift Platform Services team (full view) and Product Owners/Technical Leads (limited view), we are working on creating roles for Ministry security staff to consume as well.  Until then, you can contact nick.corcoran@gov.bc.ca for details.
+While access to the registry is currently limited to the OpenShift Platform Services team (full view) and Product Owners/Technical Leads (limited view), we are working on creating roles for Ministry security staff to consume as well.  Until then, you can contact PlatformServicesTeam@gov.bc.ca for details.
 
 ------
 ### <a name="communications"></a>Communications
 
 Community sharing, alerts and discussions take place on Rocket Chat, which we host as an app on OpenShift.  Authentication via IDIR or GitHub (in BCGov org or invited by an existing member).
-- https://developer.gov.bc.ca/Steps-to-join-Rocket.Chat
+- https://cloud.gov.bc.ca/private-cloud/support-and-community/stay-connected/
 - https://just-ask.developer.gov.bc.ca/
-- https://developer.gov.bc.ca/Leveraging-Rocket.Chat
 
 #### Mautic
 
@@ -142,8 +140,9 @@ Mautic has been implemented to allow for subscription based communications for t
 
 Access to OpenShift is brokered through our OpenShift SSO Service (currently leveraging KeyCloak).
 
-- https://developer.gov.bc.ca/Request-SSO-Client-Creation
-- https://developer.gov.bc.ca/How-to-Request-New-User-Access-to-OpenShift
+- https://github.com/bcgov/sso-keycloak/wiki/SSO-Onboarding
+- https://bcgov.github.io/sso-requests
+
 
 GitHub has been the primary authentication to date on OpenShift, however we are in the process of introducing IDIR (via Azure AD).  Both of these options require an account with 2FA/MFA enabled.  
 GitHub - All clusters  
@@ -194,15 +193,18 @@ Image Analysis
 ------
 ### <a name="container-image-scanning"></a>Container image scanning (Aqua, Xray)
 
-Image scanning/analysis comes in 2 forms - 1 active (Aqua), 1 passive (XRay).
+Image scanning/analysis comes in 2 forms - 1 active (RedHat Advanced Cluster Security - ACS), 1 passive (XRay).
 
-**Aqua:**
+**ACS:**
 
-This tool allows us to scan image registries and running containers for image vulnerabilities.  It also allows us to create policies at build, deploy, and runtime.
-- https://developer.gov.bc.ca/BC-Government-Aqua-Cloud-Service-Definition
+This tool allows us to scan image registries and running containers for image vulnerabilities.  It also allows us to create policies at build, deploy, and runtime.  It can also help in defining network security policies for your application and visualizing component communications.
+Scoped access is granted based on identification as a Product Owner or Technical Lead in the OpenShift Product Registry.  
+Developer access can be granted by request.  Requests must include the following:
+- Namespaces
+- Product Owner approval
 
-We are also workign with teams on integrating Aqua container image scanning into pipelines.
-Alternatively, Aqua image scans may be requrested by contacting Nick Corcoran via email (nick.corcoran@gov.bc.ca) or on Rocket Chat.  Nick can walk through results with the team if desired.
+- https://acs.developer.gov.bc.ca
+- https://www.redhat.com/en/technologies/cloud-computing/openshift/advanced-cluster-security-kubernetes
 
 **XRay:**
 
