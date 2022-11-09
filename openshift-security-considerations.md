@@ -157,7 +157,7 @@ We are investigating third party tools to help improve the user management exper
 
 Platform Services Roles and Responsibilities can be found here:
 - https://cloud.gov.bc.ca/private-cloud/your-product-team-in-the-private-cloud-paas/our-shared-responsibilities/
-- 
+
 The Platform Services team maintains an Access Control Policy for all platform tools.  
 - https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/c1ma8i4adqrdud0ff650/access-control-policy-openshift-and-platform-tools-public. **Need to update location**
 
