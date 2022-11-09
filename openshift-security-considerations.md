@@ -107,6 +107,7 @@ The following security assessments are ***underway***:
 
 The following security assessments are ***planned***:
 - Cert Manager for OpenShift
+- Kyverno
 - GitGuardian
 - Platform Security Dashboard
 
@@ -260,7 +261,7 @@ This 'secrets' store should actually only be used for configurations.  Values ar
 
 **Vault:**
 
-The preferred secrets management tool, Vault was recently launched for team use on OpenShift.
+The preferred secrets management tool for team use on OpenShift.
 - https://cloud.gov.bc.ca/private-cloud/our-products-in-the-private-cloud-paas/vault-secrets-management/
 - https://beta-docs.developer.gov.bc.ca/vault-secrets-management-service/
 - https://beta-docs.developer.gov.bc.ca/vault-getting-started-guide/
@@ -270,6 +271,8 @@ The preferred secrets management tool, Vault was recently launched for team use 
 
 Argo CD provides a GitOps capability for sync'ing a Git repository with an OpenShift configuration (platform or application).
 - https://beta-docs.developer.gov.bc.ca/argo-cd-usage/
+
+We are in the process of testing out the GitOps Operator, based on ArgoCD, that is integrated into OpenShift.  This may replace (partially or completely) our custom ArgoCD implementation.
 
 ------
 ### <a name="api-management"></a>Application Programmable Interface (API) Management
@@ -317,6 +320,7 @@ Retention is set as follows:
 - Audit logs - 13 months
 
 We are currently working on Azure AD integration (via KeyCloak) and user role mapping based on OpenShift namespace access.
+This activity has paused for the time being but will be re-started in the new year.
 
 **Uptime.com**
 
