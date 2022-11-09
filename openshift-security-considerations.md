@@ -165,7 +165,7 @@ The Platform Services team maintains an Access Control Policy for all platform t
 ------
 ### <a name="kubernetes-network-policies"></a>Kubernetes Network Policies (KNPs)
 
-Network policies help the platform and project teams to better control communications between components.  While KNPs only apply as INGRESS rules (not egress), they help to improve our overall security posture.  KNPs only apply to on-cluster communications (i.e. between pods in a namespace, or between namespaces).  For off-cluster communications, hosting is investigating a VMWare tool called NSX-T.
+Network policies help the platform and project teams to better control communications between components.  While KNPs only apply as INGRESS rules (not egress), they help to improve our overall security posture.  KNPs only apply to on-cluster communications (i.e. between pods in a namespace, or between namespaces).  For off-cluster communications, hosting is investigating a VMWare tool called NSX-T.  NSX-T governs network policies for our Emerald cluster.
 
 Find our more about using KNPs to control network security for an application hosted on the Private Cloud Openshift Platform in [this document](https://beta-docs.developer.gov.bc.ca/openshift-network-policies/). 
 
