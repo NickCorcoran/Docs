@@ -155,10 +155,10 @@ Cluster roles are managed either in private GitHub repositories (in the bcgov-c 
 We are investigating third party tools to help improve the user management experience.
 
 Platform Services Roles and Responsibilities can be found here:
-- https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bslf7h8755crgmr8i9rg/platform-services-roles-and-responsibilities
-
+- https://cloud.gov.bc.ca/private-cloud/your-product-team-in-the-private-cloud-paas/our-shared-responsibilities/
+- 
 The Platform Services team maintains an Access Control Policy for all platform tools.  
-- https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/c1ma8i4adqrdud0ff650/access-control-policy-openshift-and-platform-tools-public
+- https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/c1ma8i4adqrdud0ff650/access-control-policy-openshift-and-platform-tools-public. **Need to update location**
 
 ------
 ### <a name="kubernetes-network-policies"></a>Kubernetes Network Policies (KNPs)
@@ -218,8 +218,9 @@ An addon capability to Artifactory, XRay scans images and other artifacts for co
 ------
 ### <a name="container-runtime-security"></a>Container runtime security
 
-We currently have runtime policies in place for the following using Aqua:
-![aqua_enforce](https://user-images.githubusercontent.com/53879638/144319023-46c9d915-405f-421f-8ec0-13280b76586b.JPG)
+We currently have runtime policies in place for the following using ACS.  These look for things like:
+- Cryto-mining
+- Integrity monitoring
 
 Additionally, OpenShift uses CoreOS and the CRI-O container engine.
 - https://docs.openshift.com/container-platform/4.7/architecture/architecture-rhcos.html
@@ -361,7 +362,7 @@ We are currently piloting the use of GitHub Enterprise.
 ### <a name="other-considerations"></a><u>Other considerations</u>
 **Payment Card Industry Compliance (PCI-DSS)**
 
-Our OpenShift implementation is **NOT** PCI-DSS compliant.  If you wish to host an application on OpenShift that needs to perform financial transactions, please refer to the following:  https://developer.gov.bc.ca/Payment-Card-Processing-for-OpenShift-Applications
+Our OpenShift implementation is **NOT** PCI-DSS compliant.  If you wish to host an application on OpenShift that needs to perform financial transactions, please refer to the following:  https://developer.gov.bc.ca/Payment-Card-Processing-for-OpenShift-Applications. **Need to update**
 Some teams have decided to host PCI-scoped applications on-prem (non-OpenShift) or on a cloud based service (AWS, Azure, etc) to avoid linkages with government systems not under their control.
 
 **Training/Support**
@@ -370,7 +371,7 @@ The platform services team provides training to onboarding teams, as well as sup
 
 ***Training:***
 - https://cloud.gov.bc.ca/private-cloud/support-and-community/platform-training-and-resources/openshift-101/
-- [https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-201](https://cloud.gov.bc.ca/private-cloud/support-and-community/platform-training-and-resources/openshift-201/)
+- https://cloud.gov.bc.ca/private-cloud/support-and-community/platform-training-and-resources/openshift-201/
 - https://github.com/bcdevops/devops-platform-workshops
 
 ***Support:***
