@@ -225,14 +225,16 @@ An addon capability to Artifactory, XRay scans images and other artifacts for co
 We currently have runtime policies in place for the following using ACS.  These look for things like:
 - Cryto-mining
 - Integrity monitoring
+- https://docs.openshift.com/acs/3.66/operating/manage-security-policies.html
 
 Additionally, OpenShift uses CoreOS and the CRI-O container engine.
-- https://docs.openshift.com/container-platform/4.7/architecture/architecture-rhcos.html
+- https://docs.openshift.com/container-platform/4.10/architecture/architecture-rhcos.html
 
 ------
 ### <a name="tls-certificates"></a>TLS Certificates
 
 OpenShift uses a wildcard certificate for the majority of cluster communications security.  This should be sufficient for dev and test workloads, but for production workloads, each team is required to obtain a dedicated TLS certificate from the Access & Directory Management Services (ADMS) team.  
+
 ***Note:*** by default, the wildcard will be used to protect project workloads.  The Platform Services team worked through the wildcard issuance requriements for use on the OpenShift clusters.  Obtaining a dedicated TLS cert is currently a manual process.  
 Details on these processes can be found here: https://ssbc-client.gov.bc.ca/services/SSLCert/documents.htm
 
@@ -290,6 +292,7 @@ The Data BC team hosts an API Gateway for use by other government clients.  Deta
 The Platform Services team provides a number of tools to help ensure our platform and applications are behaving as expected, while allowing us to investigate anomolies.
 
 **OpenShift UI:**
+
 Within the OpenShift interface, project teams can view logs associated with a given pod through the Logs tab.  
 ![logging_ui](https://user-images.githubusercontent.com/53879638/144319141-d387a02c-6b9e-4330-ab5b-6e2711e39565.JPG)
 
